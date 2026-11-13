@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="theme-color" content="#f7f7f7">
+
+  <title>Makeup | Asistente de maquillaje</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <main class="app-container">
+
+    <!-- Zona de chat -->
+
+    <section class="chat-container" aria-label="Zona de chat">
+
+      <header class="chat-header">
+
+        <div class="logo">Makeup<span>.</span></div>
+
+        <h1>Zona de chat</h1>
+
+        <p>Tu asistente personal de maquillaje</p>
+
+      </header>
+
+      <div id="chatMessages" class="chat-messages" aria-live="polite">
+
+        <div class="message agent-message">
+
+          <div class="message-avatar">M</div>
+
+          <div class="message-content">
+
+            ¡Hola! Bienvenida a Makeup. 💄
+
+            <br><br>
+
+            Estoy acá para ayudarte a encontrar los productos
+
+            de maquillaje ideales para vos.
+
+            ¿Qué producto estás buscando?
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Zona de escritura -->
+
+      <section class="writing-container" aria-label="Zona de escritura">
+
+        <label for="messageInput">Zona de escritura</label>
+
+        <div class="input-container">
+
+          <textarea
+
+            id="messageInput"
+
+            maxlength="500"
+
+            placeholder="Escribí tu mensaje..."
+
+            rows="1"
+
+          ></textarea>
+
+          <button id="sendButton" type="button" aria-label="Enviar mensaje">
+
+            <span>↑</span>
+
+          </button>
+
+        </div>
+
+        <div class="writing-footer">
+
+          <span id="characterCount">0/500</span>
+
+          <span>Makeup · Tu asistente de belleza</span>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script src="config.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
